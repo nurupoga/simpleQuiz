@@ -8,10 +8,14 @@
 
 #import "ViewController.h"
 
-@interface ResultViewController : ViewController{
+@interface ResultViewController : UIViewController{
     int _getAnswerCount;
     int _getSumCount;
+    IBOutlet UILabel *answerCountLabel;
+    IBOutlet UILabel *sumLabel;
+    
 }
 @property (nonatomic) int getAnswerCount;
 @property (nonatomic) int getSumCount;
 @end
+

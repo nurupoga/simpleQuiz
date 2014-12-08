@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"出題数%d 正解数%d",_getSumCount,_getAnswerCount);
+    sumLabel.text=[NSString stringWithFormat:@"%d",_getSumCount];
+    answerCountLabel.text=[NSString stringWithFormat:@"%d",_getAnswerCount];
 }
 
 - (void)didReceiveMemoryWarning {
